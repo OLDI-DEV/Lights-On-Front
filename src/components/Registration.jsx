@@ -1,7 +1,7 @@
 
 import styled from 'styled-components'
 import registrationBackgroundImg from '../assets/images/registrationImg.svg'
-import registrationPhoneImg from '../assets/images/registration-phone.svg'
+import registrationPhoneImg from '../assets/images/registration-phone.png'
 
 
 const Registration = () => {
