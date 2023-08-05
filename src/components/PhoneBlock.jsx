@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import leftCubeImg from '../assets/images/left-cueb.svg'
-import RightCubeImg from '../assets/images/right-cube.svg'
+import leftCubeImg from '../assets/images/left-cube.png'
+import RightCubeImg from '../assets/images/right-cube.png'
 import phoneImg from '../assets/images/phone-img.png'
 
 

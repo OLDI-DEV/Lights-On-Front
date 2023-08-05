@@ -31,7 +31,8 @@ const Services = () => {
             <ServiceImg
               src={CloudImg}
             />
-            <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
+            <ServiceItemTitle>Облачные решения
+              и виртуализация</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescription>Комплексные облачные решения, адаптированные к вашим конкретным требованиям, позволяющие безопасно хранить данные и получать к ним доступ из любого места и в любое время. Поможем вам перенести существующую инфраструктуру в облако, оптимизировать ресурсы и внедрить технологии виртуализации .</ServiceDescription>
             </ServiceItemDescription>
@@ -40,7 +41,7 @@ const Services = () => {
             <ServiceImg
               src={ItImg}
             />
-            <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
+            <ServiceItemTitle>IT-безопасность</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescription>Защита конфиденциальных данных и обеспечение соответствия нормативным требованиям имеют первостепенное значение в современном цифровом ландшафте. Проведём тщательную оценку ваших систем, выявим уязвимости и примем надежные меры для защиты вашей организации от киберугроз.</ServiceDescription>
             </ServiceItemDescription>
@@ -49,7 +50,7 @@ const Services = () => {
             <ServiceImg
               src={ManagementImg}
             />
-            <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
+            <ServiceItemTitle>Управление</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescription>Позвольте нам позаботиться о ваших повседневных IT-потребностях, чтобы вы могли сосредоточиться на основной деятельности. Наши услуги включают упреждающий мониторинг, устранение неполадок, управление исправлениями и всестороннюю техническую поддержку.</ServiceDescription>
             </ServiceItemDescription>
@@ -58,7 +59,7 @@ const Services = () => {
             <ServiceImg
               src={StrategyImg}
             />
-            <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
+            <ServiceItemTitle>Консалтинг и стратегия</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescription>Будьте на шаг впереди благодаря нашим услугам IT-консалтинга. Предоставим ценную информацию и порекомендуем инновационные технологии, которые помогут вам получить конкурентное преимущество в вашей отрасли.</ServiceDescription>
             </ServiceItemDescription>
@@ -67,7 +68,7 @@ const Services = () => {
             <ServiceImg
               src={ProjectImg}
             />
-            <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
+            <ServiceItemTitle>Проектирование</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescription>Оценим потребности вашей организации и спроектируем надежную сетевую инфраструктуру, обеспечивающую бесперебойную связь и оптимальную производительность. Возьмем на себя установку и настройку всех необходимых аппаратных и программных компонентов, обеспечив безопасную и эффективную настройку сети.</ServiceDescription>
             </ServiceItemDescription>
@@ -93,7 +94,8 @@ const ServicesItems = styled.div`
 display: flex;
 flex-flow:row wrap;
 justify-content: space-between;
-/* gap:80px; */
+
+gap:45px;
 `
 const ServiceDescriptionList = styled.ul`
 margin:0px;
@@ -145,7 +147,7 @@ flex-direction: column;
 max-width: 295px;
 height: 400px;
 padding:32px;
-
+border-top: 4px solid #FFF;
 &:hover{
 border-radius: 0px 0px 40px 40px;
 border-top: 4px solid #0371FF;

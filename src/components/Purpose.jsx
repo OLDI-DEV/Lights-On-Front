@@ -1,6 +1,6 @@
 
 import styled from 'styled-components'
-import cubeImg from '../assets/images/cube-Purpose.svg'
+import cubeImg from '../assets/images/cube-Purpose.png'
 
 
 const Purpose = () => {
