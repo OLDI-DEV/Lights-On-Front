@@ -10,7 +10,7 @@ const Purpose = () => {
         <PurposeText>
           Наша цель - предоставить каждому возможность воспользоваться преимуществами самых передовых технологий, представленных на рынке.
         </PurposeText>
-        <CubeImg 
+        <CubeImg
           src={cubeImg}
         />
       </PurposeContainer>
@@ -26,6 +26,18 @@ const CubeImg = styled.img`
 position:absolute;
 right:0;
 top:-135px;
+@media screen and (max-width: 1000px) {
+width:250px;
+
+  }
+@media screen and (max-width: 780px) {
+width:200px;
+
+  }
+@media screen and (max-width: 650px) {
+width:150px;
+top:-80px;
+  }
 `
 
 const PurposeText = styled.div`
@@ -36,7 +48,26 @@ font-style: normal;
 font-weight: 500;
 line-height: 52px; 
 letter-spacing: -0.74px;
-width:900px;
+max-width:900px;
+padding:0px 16px;
+@media screen and (max-width: 1000px) {
+text-align:center;
+  }
+
+@media screen and (max-width: 780px) {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px; 
+  letter-spacing: -0.48px;
+}
+@media screen and (max-width: 650px) {
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; 
+letter-spacing: -0.36px;
+}
 `
 const PurposeContainer = styled.div`
 max-width:1240px;
@@ -44,11 +75,17 @@ margin:0 auto;
 padding:30px 16px 0px;
 padding:166px 0;
 position:relative;
+@media screen and (max-width: 780px) {
+  padding:54px 0;
+}
 
 `
 const PurposeWrapper = styled.div`
 width:100%;
 background-color: #000B28;
 margin-top: 230px;
+@media screen and (max-width: 480px) {
+  margin-top: 150px;
+}
 `
 
