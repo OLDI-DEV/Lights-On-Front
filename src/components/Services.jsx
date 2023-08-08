@@ -95,8 +95,13 @@ const ServicesItems = styled.div`
 display: flex;
 flex-flow:row wrap;
 justify-content: space-between;
-
 gap:45px;
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+  }
+    @media screen and (max-width: 780px) {
+     gap:40px;
+  }
 `
 const ServiceDescriptionList = styled.ul`
 margin:0px;
@@ -120,7 +125,19 @@ font-family: 'Montserrat' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 24px */
+line-height: 150%; 
+  @media screen and (max-width: 780px) {
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+    @media screen and (max-width: 400px) {
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+  }
+}
 `
 
 const ServiceItemTitle = styled.div`
@@ -132,6 +149,20 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-top: 4px;
+  @media screen and (max-width: 780px) {
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    @media screen and (max-width: 720px) {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  }
+}
 `
 
 
@@ -139,8 +170,11 @@ const ServiceImg = styled.img`
 display: flex;
 flex-direction: column;
 width:100px;
-height:100px;
-margin-left: -20px;
+height:90px;
+margin-left: -22px;
+  @media screen and (max-width: 720px) {
+  align-self:center;
+}
 `
 const ServiceItem = styled.div`
 display: flex;
@@ -149,11 +183,16 @@ max-width: 295px;
 height: 400px;
 padding:32px;
 border-top: 4px solid #FFF;
+  @media screen and (max-width: 800px) {
+  max-width: 260px;
+}
+
 &:hover{
 border-radius: 0px 0px 40px 40px;
 border-top: 4px solid #0371FF;
 background: #FFF;
 box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08);
+
 }
 
 `
@@ -174,11 +213,24 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 100px;
+  @media screen and (max-width: 780px) {
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.72px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+
+
+
 `
 
 const ServicesContainer = styled.div`
 display: flex;
 flex-direction: column;
-/* justify-content: space-between; */
+
 
 `

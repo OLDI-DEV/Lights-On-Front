@@ -22,8 +22,13 @@ const Footer = () => {
         </NavBar>
       </TopItems>
       <DownItems>
-        <DownItemText>ООО "ЛАЙТС ОН"</DownItemText>
-        <DownItemText>ИНН 7716859332</DownItemText>
+        <MainLogoImgMobile
+          src={LogoImg}
+        />
+        <div>
+          <DownItemText>ООО "ЛАЙТС ОН"</DownItemText>
+          <DownItemText>ИНН 7716859332</DownItemText>
+        </div>
 
       </DownItems>
 
@@ -32,6 +37,16 @@ const Footer = () => {
 }
 
 export default Footer;
+
+const MainLogoImgMobile = styled.img`
+display:none;
+
+    @media screen and (max-width: 480px) {
+  width:130px;
+  height:45px ;
+  display:block;
+  }
+`
 
 
 const DownItemText = styled.div`
@@ -53,6 +68,12 @@ display: flex;
 flex-direction:column;
 align-items: center;
 padding:32px 0px 10px;
+    @media screen and (max-width: 480px) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+  margin-bottom:100px;
+  }
 `
 
 const TopItems = styled.div`
@@ -63,6 +84,9 @@ justify-content: space-between;
   padding:16px 0;
   border-top:1px solid rgba(230, 230, 230, 1);
   border-bottom:1px solid rgba(230, 230, 230, 1);
+    @media screen and (max-width: 480px) {
+  justify-content: center;
+  }
 `
 
 
@@ -76,15 +100,26 @@ font-weight: 500;
 line-height: 24px; 
 letter-spacing: -0.32px;
 cursor:pointer;
+  @media screen and (max-width: 480px) {
+   font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  letter-spacing: -0.28px;
+  }
+
 `
 const NavBar = styled.div`
 display: flex;
 gap:24px;
+
 `
 const MainLogoImg = styled.img`
 width:210px;
 height:72px;
-
+    @media screen and (max-width: 480px) {
+  display:none;
+  }
 `
 
 const FooterContainer = styled.div`
@@ -92,6 +127,9 @@ const FooterContainer = styled.div`
   width:100%;
   display: flex;
   flex-direction:column;
-
-  
+  padding:0 16px;
+  gap:15px;
+    @media screen and (max-width: 650px) {
+  margin-top: 100px;
+  }
 `
