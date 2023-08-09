@@ -7,7 +7,7 @@ const Technology = () => {
   return (
 
     <TechologyContainer>
-      <TechologyTitle>Технологии для всех</TechologyTitle>
+      <TechologyTitle>Технологии для <GradientWord>всех</GradientWord></TechologyTitle>
       <TechologySubTitle>Разработка качественного компьютерного программного обеспечения</TechologySubTitle>
       <ContactInformation>
         <ContactUsButton>
@@ -22,6 +22,43 @@ const Technology = () => {
 }
 
 export default Technology;
+
+const GradientWord = styled.span`
+color: #131316;
+background: #FFC93E;
+background: linear-gradient(to left, #FFC93E 0%, #34C759 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-family: 'Montserrat' , sans-serif;
+font-size: 69px;
+font-style: normal;
+font-weight: 900;
+line-height: 72px; 
+letter-spacing: -1.38px;
+  @media screen and (max-width: 780px) {
+font-size: 52px;
+font-style: normal;
+font-weight: 900;
+line-height: 62px;
+letter-spacing: -1.04px;
+}
+  @media screen and (max-width: 650px) {
+font-size: 36px;
+font-style: normal;
+font-weight: 900;
+line-height: 42px; 
+letter-spacing: -0.72px;
+  }
+  @media screen and (max-width: 480px) {
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 32px;
+letter-spacing: -0.48px;
+  }
+`
 
 const TimesheetTitle = styled.div`
 color: #34C759;

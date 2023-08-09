@@ -79,6 +79,7 @@ height: 730px;
 margin:0 auto;
 margin-top:20px;
 display: flex;
+
 justify-content: space-between;
   @media screen and (max-width: 780px) {
     justify-content: center;
@@ -91,6 +92,6 @@ const Wrapper = styled.div`
 margin:0 auto;
 width:90vw;
 background: radial-gradient(44.25% 42.34% at 50% 43.38%, #FFD337  39.1%, rgba(255, 255, 255, 0.00) 103%);
-/* background: radial-gradient(from 180deg at 50.00% 50.00%, #FFD337 0deg, #FFD337 360deg); */
+
 
 `
