@@ -66,6 +66,7 @@ const Services = () => {
           </ServiceItem>
           <ServiceItem>
             <ServiceImg
+            style={{height:'91px'}}
               src={ProjectImg}
             />
             <ServiceItemTitle>Проектирование</ServiceItemTitle>
