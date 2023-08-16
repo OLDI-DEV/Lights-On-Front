@@ -41,7 +41,7 @@ top:-80px;
 `
 
 const PurposeText = styled.div`
-color: #fff;
+/* color: #fff; */
 font-family: 'Montserrat' , sans-serif;
 font-size: 37px;
 font-style: normal;
@@ -50,6 +50,11 @@ line-height: 52px;
 letter-spacing: -0.74px;
 max-width:900px;
 padding:0px 16px;
+background: #FFFFFF;
+  background: linear-gradient(to right, #FFFFFF 0%, #5AC773 12%, #5AC773 47%, #FFFFFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 @media screen and (max-width: 1000px) {
 text-align:center;
   }

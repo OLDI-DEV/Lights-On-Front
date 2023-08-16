@@ -127,7 +127,6 @@ const FooterContainer = styled.div`
   width:100%;
   display: flex;
   flex-direction:column;
-  padding:0 16px;
   gap:15px;
     @media screen and (max-width: 650px) {
   margin-top: 100px;
