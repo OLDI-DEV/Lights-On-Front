@@ -1,15 +1,6 @@
 import styled from "styled-components";
-import ContactModal from "./contact/ContactModal";
-import { useState } from "react";
+import { Link } from "react-scroll";
 const Technology = () => {
-  const [isContactModal, setIsContactModal] = useState(false);
-  function openContactModal() {
-    setIsContactModal(true);
-  }
-  function closeContactModal() {
-    setIsContactModal(false);
-  }
-
   return (
     <TechologyContainer>
       <TechologyTitle>
@@ -19,17 +10,27 @@ const Technology = () => {
         Разработка качественного компьютерного программного обеспечения
       </TechologySubTitle>
       <ContactInformation>
-        <ContactUsButton
-          onClick={() => {
-            openContactModal();
-          }}
+        <Link
+          activeClass="active"
+          to="registration"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
         >
-          Связаться с нами
-        </ContactUsButton>
-        <TimesheetTitle>Как мы работаем?</TimesheetTitle>
+          <ContactUsButton>Связаться с нами</ContactUsButton>
+        </Link>
+        <Link
+          activeClass="active"
+          to="howWeWork"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+        >
+          <TimesheetTitle>Как мы работаем?</TimesheetTitle>
+        </Link>
       </ContactInformation>
-      {isContactModal && <ContactModal closeContactModal={closeContactModal} />}
-      
     </TechologyContainer>
   );
 };

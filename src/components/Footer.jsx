@@ -2,6 +2,7 @@ import LogoImg from "../assets/images/lights_on_logo.svg";
 import styled from "styled-components";
 import ContactModal from "./contact/ContactModal";
 import { useState } from "react";
+import { Link } from "react-scroll";
 const Footer = () => {
   const [isContactModal, setIsContactModal] = useState(false);
   function openContactModal() {
@@ -16,8 +17,17 @@ const Footer = () => {
       <TopItems>
         <MainLogoImg src={LogoImg} />
         <NavBar>
-          <NavBarItem>Услуги</NavBarItem>
-          <NavBarItem>Процесс</NavBarItem>
+          <Link
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <NavBarItem>Услуги</NavBarItem>
+          </Link>
+
           <NavBarItem
             onClick={() => {
               openContactModal();

@@ -7,11 +7,13 @@ const ContactModal = ({ closeContactModal }) => {
         <InfoBlock>
           <Title>Контакты</Title>
           <Subtitle>+74997040411</Subtitle>
+          <Subtitle>info@laitson.ru</Subtitle>
         </InfoBlock>
         <InfoBlock>
           <Title>Адрес</Title>
           <Subtitle>Москва</Subtitle>
-          <Subtitle>ул. Пресненская Наб., д. 12, Помещ. 5/5</Subtitle>
+          <Subtitle>Пресненская Наб., д. 12, Башня Федерация</Subtitle>
+          <Subtitle>Офис 5/5</Subtitle>
         </InfoBlock>
         <CloseButton onClick={closeContactModal}>Закрыть</CloseButton>
       </ContactModalContainer>

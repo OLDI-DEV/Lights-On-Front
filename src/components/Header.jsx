@@ -2,6 +2,7 @@ import LogoImg from "../assets/images/lights_on_logo.svg";
 import styled from "styled-components";
 import { useState } from "react";
 import ContactModal from "./contact/ContactModal";
+import { Link } from "react-scroll";
 const Header = () => {
   const [isContactModal, setIsContactModal] = useState(false);
   function openContactModal() {
@@ -15,17 +16,36 @@ const Header = () => {
     <HeaderContainer>
       <MainLogoImg src={LogoImg} />
       <NavBar>
-        <NavBarItem>Услуги</NavBarItem>
-        <NavBarItem>Процесс</NavBarItem>
-        <NavBarItem>Контакты</NavBarItem>
+        <Link
+          activeClass="active"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+        >
+          <NavBarItem>Услуги</NavBarItem>
+        </Link>
+
+        <NavBarItem
+          onClick={() => {
+            openContactModal();
+          }}
+        >
+          Контакты
+        </NavBarItem>
       </NavBar>
-      <ContactUsButton
-        onClick={() => {
-          openContactModal();
-        }}
+      <Link
+        activeClass="active"
+        to="registration"
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
       >
-        Связаться с нами
-      </ContactUsButton>
+        <ContactUsButton>Связаться с нами</ContactUsButton>
+      </Link>
+
       {isContactModal && <ContactModal closeContactModal={closeContactModal} />}
     </HeaderContainer>
   );

@@ -13,85 +13,44 @@ import styled from 'styled-components'
 
 const WorkDescription = () => {
   return (
-
-    <WorkDescriptionContainer>
-      <WorkDescriptionTitle>
-        Как мы работаем?
-      </WorkDescriptionTitle>
+    <WorkDescriptionContainer id="howWeWork">
+      <WorkDescriptionTitle>Как мы работаем?</WorkDescriptionTitle>
       <WorkDescriptionItems>
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div style={{ display: "flex", gap: "10px" }}>
           <DescriptionItemContainer>
             <ItemBox>
-              <ItemImg
-                src={problemDescriptionImg}
-              />
+              <ItemImg src={problemDescriptionImg} />
             </ItemBox>
-            <ItemText>
-              Описать
-              проблему
-            </ItemText>
+            <ItemText>Описать проблему</ItemText>
           </DescriptionItemContainer>
-          <UpArrowImg
-            src={upArrowImg}
-          />
+          <UpArrowImg src={upArrowImg} />
         </div>
-        <MobileArrow
-          src={mobileArrowUpImg}
-        />
+        <MobileArrow src={mobileArrowUpImg} />
 
-
-        <FirstArrowImg
-          src={arrowFirst}
-        />
-
-
+        <FirstArrowImg src={arrowFirst} />
 
         <DevItemContainer>
           <ItemBox>
-            <ItemImg
-              src={problemDecisionImg}
-            />
+            <ItemImg src={problemDecisionImg} />
           </ItemBox>
-          <ItemText>
-            Разработать
-            решение
-          </ItemText>
+          <ItemText>Разработать решение</ItemText>
         </DevItemContainer>
-        <MobileArrow
-          src={mobileArrowDownImg}
-        />
+        <MobileArrow src={mobileArrowDownImg} />
 
-        <SecondArrowImg
-          src={arrowSecond}
-        />
+        <SecondArrowImg src={arrowSecond} />
 
-
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div style={{ display: "flex", gap: "10px" }}>
           <UpdateItemContainer>
             <ItemBox>
-              <ItemImg
-                src={updateImg}
-              />
+              <ItemImg src={updateImg} />
             </ItemBox>
-            <ItemText>
-              Улучшить
-            </ItemText>
-
+            <ItemText>Улучшить</ItemText>
           </UpdateItemContainer>
-          <DownArrowImg
-            src={downArrowImg}
-          />
+          <DownArrowImg src={downArrowImg} />
         </div>
-
       </WorkDescriptionItems>
-
-
-
-
-
-
     </WorkDescriptionContainer>
-  )
+  );
 }
 
 export default WorkDescription;

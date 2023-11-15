@@ -11,73 +11,95 @@ import StrategyImg from '../assets/images/strategy-logo.svg'
 const Services = () => {
   return (
     <>
-      <ServiceTitle>Услуги</ServiceTitle>
+      <ServiceTitle id="services">Услуги</ServiceTitle>
       <ServicesContainer>
         <ServicesItems>
           <ServiceItem>
-            <ServiceImg
-              src={OneCImg}
-            />
+            <ServiceImg src={OneCImg} />
             <ServiceItemTitle>1С Интеграция</ServiceItemTitle>
             <ServiceItemDescription>
               <ServiceDescriptionList>
-                <DescriptionLi>Интегрируем 1С с сайтом и перенесём данные.</DescriptionLi>
-                <DescriptionLi>Настроим интеграцию 1С со сторонними приложениями.</DescriptionLi>
-                <DescriptionLi>Обеспечим правильный обмен данных между программами 1С.</DescriptionLi>
+                <DescriptionLi>
+                  Интегрируем 1С с сайтом и перенесём данные.
+                </DescriptionLi>
+                <DescriptionLi>
+                  Настроим интеграцию 1С со сторонними приложениями.
+                </DescriptionLi>
+                <DescriptionLi>
+                  Обеспечим правильный обмен данных между программами 1С.
+                </DescriptionLi>
               </ServiceDescriptionList>
             </ServiceItemDescription>
           </ServiceItem>
           <ServiceItem>
-            <ServiceImg
-              src={CloudImg}
-            />
-            <ServiceItemTitle>Облачные решения
-              и виртуализация</ServiceItemTitle>
+            <ServiceImg src={CloudImg} />
+            <ServiceItemTitle>
+              Облачные решения и виртуализация
+            </ServiceItemTitle>
             <ServiceItemDescription>
-              <ServiceDescription>Комплексные облачные решения, адаптированные к вашим конкретным требованиям, позволяющие безопасно хранить данные и получать к ним доступ из любого места и в любое время. Поможем вам перенести существующую инфраструктуру в облако, оптимизировать ресурсы и внедрить технологии виртуализации .</ServiceDescription>
+              <ServiceDescription>
+                Комплексные облачные решения, адаптированные к вашим конкретным
+                требованиям, позволяющие безопасно хранить данные и получать к
+                ним доступ из любого места и в любое время. Поможем вам
+                перенести существующую инфраструктуру в облако, оптимизировать
+                ресурсы и внедрить технологии виртуализации .
+              </ServiceDescription>
             </ServiceItemDescription>
           </ServiceItem>
           <ServiceItem>
-            <ServiceImg
-              src={ItImg}
-            />
+            <ServiceImg src={ItImg} />
             <ServiceItemTitle>IT-безопасность</ServiceItemTitle>
             <ServiceItemDescription>
-              <ServiceDescription>Защита конфиденциальных данных и обеспечение соответствия нормативным требованиям имеют первостепенное значение в современном цифровом ландшафте. Проведём тщательную оценку ваших систем, выявим уязвимости и примем надежные меры для защиты вашей организации от киберугроз.</ServiceDescription>
+              <ServiceDescription>
+                Защита конфиденциальных данных и обеспечение соответствия
+                нормативным требованиям имеют первостепенное значение в
+                современном цифровом ландшафте. Проведём тщательную оценку ваших
+                систем, выявим уязвимости и примем надежные меры для защиты
+                вашей организации от киберугроз.
+              </ServiceDescription>
             </ServiceItemDescription>
           </ServiceItem>
           <ServiceItem>
-            <ServiceImg
-              src={ManagementImg}
-            />
+            <ServiceImg src={ManagementImg} />
             <ServiceItemTitle>Управление</ServiceItemTitle>
             <ServiceItemDescription>
-              <ServiceDescription>Позвольте нам позаботиться о ваших повседневных IT-потребностях, чтобы вы могли сосредоточиться на основной деятельности. Наши услуги включают упреждающий мониторинг, устранение неполадок, управление исправлениями и всестороннюю техническую поддержку.</ServiceDescription>
+              <ServiceDescription>
+                Позвольте нам позаботиться о ваших повседневных IT-потребностях,
+                чтобы вы могли сосредоточиться на основной деятельности. Наши
+                услуги включают упреждающий мониторинг, устранение неполадок,
+                управление исправлениями и всестороннюю техническую поддержку.
+              </ServiceDescription>
             </ServiceItemDescription>
           </ServiceItem>
           <ServiceItem>
-            <ServiceImg
-              src={StrategyImg}
-            />
+            <ServiceImg src={StrategyImg} />
             <ServiceItemTitle>Консалтинг и стратегия</ServiceItemTitle>
             <ServiceItemDescription>
-              <ServiceDescription>Будьте на шаг впереди благодаря нашим услугам IT-консалтинга. Предоставим ценную информацию и порекомендуем инновационные технологии, которые помогут вам получить конкурентное преимущество в вашей отрасли.</ServiceDescription>
+              <ServiceDescription>
+                Будьте на шаг впереди благодаря нашим услугам IT-консалтинга.
+                Предоставим ценную информацию и порекомендуем инновационные
+                технологии, которые помогут вам получить конкурентное
+                преимущество в вашей отрасли.
+              </ServiceDescription>
             </ServiceItemDescription>
           </ServiceItem>
           <ServiceItem>
-            <ServiceImg
-            style={{height:'91px'}}
-              src={ProjectImg}
-            />
+            <ServiceImg style={{ height: "91px" }} src={ProjectImg} />
             <ServiceItemTitle>Проектирование</ServiceItemTitle>
             <ServiceItemDescription>
-              <ServiceDescription>Оценим потребности вашей организации и спроектируем надежную сетевую инфраструктуру, обеспечивающую бесперебойную связь и оптимальную производительность. Возьмем на себя установку и настройку всех необходимых аппаратных и программных компонентов, обеспечив безопасную и эффективную настройку сети.</ServiceDescription>
+              <ServiceDescription>
+                Оценим потребности вашей организации и спроектируем надежную
+                сетевую инфраструктуру, обеспечивающую бесперебойную связь и
+                оптимальную производительность. Возьмем на себя установку и
+                настройку всех необходимых аппаратных и программных компонентов,
+                обеспечив безопасную и эффективную настройку сети.
+              </ServiceDescription>
             </ServiceItemDescription>
           </ServiceItem>
         </ServicesItems>
       </ServicesContainer>
     </>
-  )
+  );
 }
 
 export default Services;
